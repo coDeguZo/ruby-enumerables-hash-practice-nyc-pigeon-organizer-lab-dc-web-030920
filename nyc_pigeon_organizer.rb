@@ -7,13 +7,5 @@ def nyc_pigeon_organizer(data)
             end
         end
     end
-    data[:color].each do |attribute_color_key, pigeon_name_arrays|
-        pigeon_name_arrays.each do |specific_name|
-            if pigeon_hash[:color][attribute_color_key].include?(specific_name)
-                puts pigeon_hash[specific_name][:color] << attribute_color_key.to_s
-            end
-        end
-    end
-    data
 end
 
