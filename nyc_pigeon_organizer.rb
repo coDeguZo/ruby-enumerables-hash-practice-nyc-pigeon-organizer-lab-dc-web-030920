@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
     name.each do |pigeon_name|
       keys.each do |item|
         if pigeon_name === item
-          pigeon_hash[item][:color] << bird_color.to_s 
+          pigeon_hash[item][:color] << attribute_color_color.to_s 
         end #Change the bird color key to a string.
       end 
     end 
