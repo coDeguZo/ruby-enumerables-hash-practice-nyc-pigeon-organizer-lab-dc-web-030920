@@ -21,7 +21,7 @@ def nyc_pigeon_organizer(data)
     type_of_pigeon.each do |pigeon_name|
       keys.each do |item|
         if pigeon_name === item
-          pigeon_hash[item][:gender] << gender.to_s
+          pigeon_hash[item][:gender] << pigeon_gender.to_s
         end #Change :gender key to string.
       end 
     end 
