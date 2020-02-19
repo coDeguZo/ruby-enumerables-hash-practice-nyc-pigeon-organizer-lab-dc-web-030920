@@ -7,7 +7,9 @@ def nyc_pigeon_organizer(data)
             end
         end
     end
-    data.each do |attributes, a_hash}
-      a_hash.each do |
+    data.each do |attributes_hash, a_hash}
+      a_hash.each do |attribute, pigeons_array|
+        pigeon_hash.each do |name_array, name|
+          if 
 end
 
