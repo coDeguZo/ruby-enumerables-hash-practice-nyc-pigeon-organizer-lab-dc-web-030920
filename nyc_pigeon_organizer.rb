@@ -7,22 +7,22 @@ def nyc_pigeon_organizer(data)
             end
         end
     end
-  option = pigeon_hash.keys
+  keys = pigeon_hash.keys #selects all the keys(:color, :gender, :lives)
   data[:color].each do |attribute_color, name|
     name.each do |pigeon_name|
-      option.each do |item|
-        if bird_name === item
-          pigeon_hash[item][:color] << bird_color.to_s
-        end 
+      keys.each do |item|
+        if pigeon_name === item
+          pigeon_hash[item][:color] << bird_color.to_s 
+        end #Change the bird color key to a string.
       end 
     end 
   end 
-  data[:gender].each do |gender, type|
-    type.each do |bird_name|
-      option.each do |item|
-        if bird_name === item
+  data[:gender].each do |pigeon_gender, type_of_pigeon|
+    type_of_pigeon.each do |pigeon_name|
+      keys.each do |item|
+        if pigeon_name === item
           pigeon_hash[item][:gender] << gender.to_s
-        end 
+        end #Change :gender key to string.
       end 
     end 
   end 
