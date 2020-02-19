@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
     data.each do |cgl, inner_data|
         inner_data.each do |category_key, name_arrays|
             name_arrays.each do |name|
-                pigeon_hash[index_name] = {color: [], gender: [], lives: []}
+                pigeon_hash[name] = {color: [], gender: [], lives: []}
             end
         end
     end
