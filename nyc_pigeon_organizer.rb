@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
             end
         end
     end
-  option = pigeon_hash
+  option = pigeon_hash.keys
   data[:color].each do |bird_color, name|
     name.each do |bird_name|
       option.each do |item|
