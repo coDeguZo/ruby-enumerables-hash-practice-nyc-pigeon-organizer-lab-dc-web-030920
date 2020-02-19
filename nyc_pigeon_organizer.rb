@@ -27,9 +27,9 @@ def nyc_pigeon_organizer(data)
     end 
   end 
   data[:lives].each do |pigeons_location, pigeons_name|
-    pigeons_name.each do |bird_name|
+    pigeons_name.each do |name|
       keys.each do |item|
-        if pigeons_name === item
+        if name === item
           pigeon_hash[item][:lives] << pigeons_location
         end #Push location to pigeons_hash
       end 
