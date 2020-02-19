@@ -35,7 +35,6 @@ def nyc_pigeon_organizer(data)
       end 
     end 
   end 
-  
   return pigeon_hash
 end 
 
